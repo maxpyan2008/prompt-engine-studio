@@ -1,14 +1,4 @@
 # Prompt Engine STUDIO v2.0 
-![Prompt Engine STUDIO interface](assets/studio-preview.png)
-
-**Build the shot. Capture the reference. Generate the prompt.**
-
-Prompt Engine STUDIO is a browser-based 3D workspace for planning shots and preparing visual references and prompts for AI image generation.
-
-The idea is simple: instead of describing a shot from scratch, you build it visually. Place your characters and objects, choose the camera angle and lens, set the lighting, and see how those decisions work together in the viewport. The studio then turns the shot setup into a structured prompt that you can use alongside the reference image.
-
-The reference shows **where everything is and how the shot is framed**. The prompt explains **what the image should depict and which visual decisions should carry through**. The studio prepares these inputs; the final image is generated in the AI tool of your choice.
-
 ## How It Works
 
 1. **Build the scene.** Add characters and objects, then arrange them in the viewport. New elements start at the scene origin `(0, 0, 0)`, so move them into position if they overlap.
@@ -17,6 +7,11 @@ The reference shows **where everything is and how the shot is framed**. The prom
 4. **Set the lighting.** Choose **Exterior**, **Room**, or **Studio** lighting. Adjust the direction to see how the light falls across faces, props, and the scene.
 5. **Set the focus.** Enable depth of field when the shot calls for it. Use **Pick Focus Point** to select a point on a character or object. The selected point is also described in the generated prompt.
 6. **Copy the reference and prompt.** Use both together in your image-generation tool. The reference carries the composition; the prompt carries the camera, lighting, focus, and character instructions.
+![Prompt Engine STUDIO interface](assets/studio-preview.png)
+![Prompt Engine STUDIO interface](assets/studio-preview2.png)
+![Prompt Engine STUDIO interface](assets/studio-preview3.png)
+
+
 
 ## What You Can Control
 
