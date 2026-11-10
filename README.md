@@ -98,5 +98,5 @@ Free for non-commercial use. Commercial use requires prior written permission fr
 
 اللهم صل على محمد وآل محمد.
 
-**تصميم: باقر البدري — Bagher Badri**  
+**تصميم: — Bagher Badri**  
 بغداد، 2026 · [Telegram: @badri_director](https://t.me/badri_director)
