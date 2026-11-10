@@ -1,4 +1,5 @@
 # Prompt Engine STUDIO v2.0 
+![Prompt Engine STUDIO interface](assets/studio-preview.png)
 
 **Build the shot. Capture the reference. Generate the prompt.**
 
