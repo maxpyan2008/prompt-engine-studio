@@ -44,7 +44,7 @@ Free for non-commercial use. Commercial use requires prior written permission fr
 
 **Designed by Bagher Badri**  
 Baghdad, 2026 · [Telegram: @badri_director](https://t.me/badri_director)
-# Prompt Engine STUDIO v2.0 — Build 67
+# Prompt Engine STUDIO v2.0
 
 **كوّن اللقطة، التقط المرجع، وأنشئ البرومبت.**
 
@@ -91,6 +91,6 @@ Baghdad, 2026 · [Telegram: @badri_director](https://t.me/badri_director)
 ## الاستخدام والترخيص
 
 الاستخدام غير التجاري مجاني. يتطلب الاستخدام التجاري موافقة خطية مسبقة من صاحب الحقوق. راجع [ملف الترخيص](LICENSE.md) للاطلاع على الشروط. تحتفظ المكتبات والأصول التابعة للغير بتراخيصها الخاصة.
-
+اللهم صل على محمد و آل محمد
 **تصميم: باقر البدري — Bagher Badri**  
 بغداد، 2026 · [Telegram: @badri_director](https://t.me/badri_director)
