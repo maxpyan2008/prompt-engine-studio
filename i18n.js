@@ -1,4 +1,4 @@
-let locale='ar';const texts=new WeakMap(),attrs=new WeakMap();
+let locale='en';const texts=new WeakMap(),attrs=new WeakMap();
 const dictionary={
 "جالس على الأرض":"Seated on floor","نائم":"Sleeping / lying down","يتفحص الجوال":"Checking phone","يتحدث بالجوال":"Talking on phone","يتكلم":"Talking","بدون فعل":"No action","يشير":"Pointing","سعيد":"Happy","غاضب":"Angry","يبكي":"Crying","متعجب":"Surprised","يتساءل":"Questioning",
 
