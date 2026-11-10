@@ -1,0 +1,37 @@
+/* v45: one row of equal tabs, free page scrolling and a true proportional frame. */
+html:has(body.edition44),body.edition44{overflow:auto!important;height:auto!important;min-height:100%}
+.edition44 main{grid-template-columns:minmax(300px,1fr) var(--inspector-width45,550px)!important;overflow:visible!important;max-width:2200px}
+.edition44 .controls{width:100%;min-height:0!important;overscroll-behavior:auto}
+.edition44 .inspector-shell44 .tabs{display:flex!important;flex-flow:row nowrap!important;grid-template-columns:none!important;gap:2px;padding:8px!important;overflow-x:auto;overscroll-behavior:auto;scrollbar-width:thin}
+.edition44 .inspector-shell44 .tabs button{width:var(--tab-width45,74px)!important;min-width:var(--tab-width45,74px)!important;max-width:var(--tab-width45,74px)!important;flex:0 0 var(--tab-width45,74px)!important;min-height:62px!important;padding:7px 5px!important}
+.edition44 .tabs .tab-name44{font-size:12px!important;white-space:nowrap!important}
+.edition44 .tabs span[hidden]{display:none!important}
+.edition44 #utilityMenuButton44{font-size:28px;min-width:38px}
+.edition44 .inspector-scroll44{overscroll-behavior:auto;touch-action:pan-y}
+.edition44 .viewport-toolbar{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important}
+.edition44 .viewport-toolbar>.actor-toolbar{grid-column:3!important;grid-row:1!important;justify-self:end;justify-content:flex-end!important;width:auto!important;flex-flow:row nowrap!important;direction:ltr!important;margin-left:auto!important;min-width:0}
+.edition44 #actorTabs{direction:ltr!important;display:flex!important;flex-flow:row wrap!important;justify-content:flex-end!important;max-width:100%}
+.edition44 .viewport-toolbar>.history44{grid-column:2!important;grid-row:1!important;justify-self:center}
+.edition44 .viewport-toolbar>.camera-light-bar{grid-column:1!important;grid-row:1!important;flex-wrap:wrap}
+.edition44 .stage-wrap{width:100%;min-height:0!important;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:none!important;background:#111922}
+.edition44 #stage{max-width:100%!important;max-height:none!important;min-height:0!important;aspect-ratio:auto!important}
+.edition44 #sceneCanvas{width:100%!important;height:100%!important}
+.edition44 #camera .precision44>label{display:grid;grid-template-columns:120px minmax(0,1fr) 48px;gap:12px;margin:20px 0}
+.edition44 #camera .precision44 input[type=range]{width:100%;max-width:none;border:0;padding:0;accent-color:#e7a27f}
+.edition44 #camera .precision44 output{font:12px monospace;direction:ltr;text-align:right;color:#ecc4ac}
+.edition44 #camera .precision44 input[type=checkbox]{justify-self:start}
+.edition44 #lighting .weather-grid{grid-template-columns:repeat(5,1fr)!important}
+.edition44 #weatherLevels[hidden],.edition44 #fogFields[hidden]{display:none!important}
+.edition44 .model-picker45{position:relative;display:grid;gap:8px;margin:16px 0;font-size:13px}
+.edition44 .model-current45{width:100%;display:flex;align-items:center;gap:14px;text-align:start;padding:6px 12px!important}
+.edition44 .model-current45 img{width:76px;height:60px;object-fit:contain;border-radius:5px}
+.edition44 .model-current45>span:last-child{margin-inline-start:auto}
+.edition44 .model-grid45{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:10px;border:1px solid #53677c;border-radius:8px;background:#142231;max-height:340px;overflow:auto}
+.edition44 .model-grid45[hidden]{display:none!important}
+.edition44 .model-grid45 button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:5px!important;font-size:12px}
+.edition44 .model-grid45 img{width:100%;max-width:112px;height:90px;object-fit:contain}
+.edition44 .model-grid45 button[aria-selected=true]{border-color:#ed9a83;background:#503a3a}
+@media(max-width:1100px){.edition44 main{grid-template-columns:minmax(280px,1fr) minmax(300px,42vw)!important}.edition44 .inspector-shell44 .tabs{overflow-x:auto}.edition44 .viewport-toolbar{gap:4px}.edition44 #actorTabs .person-tab{width:36px!important;height:40px!important}.edition44 #actorTabs .actor-avatar{width:26px!important;height:30px!important}}
+@media(max-width:740px){.edition44 main{display:flex!important;flex-direction:column!important}.edition44 .controls{position:static!important;width:100%;height:75vh!important}.edition44 .viewport-toolbar>.actor-toolbar{grid-row:1!important}.edition44 .viewport-toolbar{min-height:52px!important}.edition44 #camera .precision44>label{grid-template-columns:105px minmax(0,1fr) 40px}}
+
+.edition44 .road-range46{display:grid!important;grid-template-columns:110px minmax(0,1fr) 56px;gap:12px;align-items:center}.edition44 .road-range46 input[type=range]{width:100%;max-width:none!important;border:0!important;padding:0!important;accent-color:#e7a27f}.edition44 .road-range46 output{font:12px monospace;direction:ltr;text-align:right;color:#ecc4ac}.edition44 #recoverView46{position:absolute;right:12px;top:12px;z-index:7;min-width:36px;height:36px;padding:6px 9px;background:#172638d9;font-size:12px}.edition44 #recoverView46 svg{width:20px;height:20px;vertical-align:middle}

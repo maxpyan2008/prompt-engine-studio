@@ -1,0 +1,47 @@
+/* Menu shared by both appearances. No scene layout dimensions are changed. */
+#utilityMenu44 #themeMenu60{margin:3px 0;border-block:1px solid #ffffff20}#utilityMenu44 #themeMenu60>summary{font-size:12px;padding:9px 5px!important;border:0!important;cursor:pointer}#themeMenu60>div{display:grid;gap:4px;padding:0 0 7px}#themeMenu60 button{display:flex;align-items:center;gap:8px;min-height:34px;padding:6px 8px;font-size:11px;width:100%;text-align:start}#themeMenu60 button span{flex:1}#themeMenu60 button b{font-weight:500}#themeMenu60 button b[hidden]{display:none}.theme-swatch60{display:block;width:17px;height:17px;flex:none;border:1px solid #ffffff40;border-radius:4px}.classic60{background:linear-gradient(135deg,#142130 50%,#de786c 50%)}.graphite60{background:linear-gradient(135deg,#242428 50%,#e63946 50%)}
+/* Graphite: only surface, typography, border, radius and interaction styling. */
+html[data-studio-theme=graphite]{color-scheme:dark;--bg:#1a1a1e;--panel:#242428;--surface:#242428;--surface-2:#2b2b30;--line:#33333a;--border:#33333a;--border-soft:#2e2e34;--text:#e8e8ec;--muted:#a6a6b0;--accent:#e63946;--accent-hover:#ff4d5a;--font:'Segoe UI',system-ui,-apple-system,Tahoma,sans-serif}
+html[data-studio-theme=graphite] body{background:#1a1a1e!important;color:#e8e8ec!important;font-family:var(--font)!important;-webkit-font-smoothing:antialiased}
+html[data-studio-theme=graphite] :is(button,input,textarea,select,output,summary,h1,h2,h3,strong,label){font-family:var(--font)!important}
+html[data-studio-theme=graphite] :is(.controls,.inspector-shell44,.inspector-top44,.tabs,.inspector-scroll44,.viewport-toolbar,#promptSection,.quick-popover,dialog,#characterPopup,#characterMenu,.model-popup45){background:#242428!important;border-color:#33333a!important;color:#e8e8ec!important;box-shadow:none!important}
+html[data-studio-theme=graphite] :is(.workspace,.stage-wrap){background:#1a1a1e!important;border-color:#33333a!important;box-shadow:none!important}
+html[data-studio-theme=graphite] :is(dialog,.quick-popover,#characterPopup,#characterMenu,.model-popup45){border-radius:8px!important;box-shadow:0 14px 40px #0005!important}
+html[data-studio-theme=graphite] :is(button,select,input[type=number],input[type=text],input[type=time],textarea,#promptRich44){background:#2b2b30!important;color:#e8e8ec!important;border-color:#33333a!important;border-radius:5px!important;box-shadow:none!important;transition:background .15s,border-color .15s,color .15s}
+html[data-studio-theme=graphite] button:hover:not(:disabled){background:#34343b!important;border-color:#6b6b75!important;color:#fff!important}
+html[data-studio-theme=graphite] button:disabled{opacity:.4}
+html[data-studio-theme=graphite] :is(button.active,button[aria-pressed=true]){background:#e639461b!important;border-color:#e63946!important;color:#fff!important}
+html[data-studio-theme=graphite] :is(button.primary,.tabs button.active){background:#e63946!important;border-color:#e63946!important;color:#fff!important}
+html[data-studio-theme=graphite] button.primary:hover{background:#ff4d5a!important;border-color:#ff4d5a!important}
+html[data-studio-theme=graphite] :is(input,textarea,select):focus{border-color:#e63946!important}
+html[data-studio-theme=graphite] :is(button,input,textarea,select):focus-visible{outline:2px solid #e63946!important;outline-offset:2px}
+html[data-studio-theme=graphite] :is(.brand,.brand strong,.tabs button svg,.camera-light-bar button svg){color:#e8e8ec!important}
+html[data-studio-theme=graphite] :is(.brand-version54,.hint,.navigation-hint58,#credits54,.tab-name44){color:#a6a6b0!important}
+html[data-studio-theme=graphite] .tabs button.active .tab-name44{color:white!important}
+html[data-studio-theme=graphite] :is(.profile-demographics,.profile-tabs54,.character-card,.source-block,.quick-head,.pro-head,.studio-presets-main53,details>summary,.prompt-actions,.prompt-section){border-color:#33333a!important}
+html[data-studio-theme=graphite] :is(.character-card,.profile-size53,.gallery-size53,.profile-grid52,.appearance-grid54,.studio-quick53,.inside-all52){background:transparent!important;box-shadow:none!important}
+html[data-studio-theme=graphite] :is(.profile-grid52 button,.appearance-grid54 button,.model-adders button,.preset-card,.light-preset-row44 button){background:#2b2b30!important}
+html[data-studio-theme=graphite] :is(.profile-grid52 button.active,.appearance-grid54 button.active,.preset-card.active){border-color:#e63946!important;border-bottom-color:#e63946!important;background:#e639461b!important}
+html[data-studio-theme=graphite] :is(input[type=range],input[type=checkbox]){accent-color:#e63946!important}
+html[data-studio-theme=graphite] input[type=range]::-webkit-slider-thumb{background:#e63946!important;border-color:#e63946!important}
+html[data-studio-theme=graphite] input[type=range]::-moz-range-thumb{background:#e63946!important;border-color:#e63946!important}
+html[data-studio-theme=graphite] #promptRich44{background:#242428!important;border-color:#33333a!important}
+html[data-studio-theme=graphite] #promptRich44 .prompt-heading44{font-weight:600}
+html[data-studio-theme=graphite] :is(#credits54 a,.quick-head strong){color:#a6a6b0!important}
+html[data-studio-theme=graphite] #credits54 a:hover{color:#ff4d5a!important}
+html[data-studio-theme=graphite] #toast{background:#e63946!important;color:white!important}
+html[data-studio-theme=graphite] ::-webkit-scrollbar-thumb{background:#44444d;border-radius:4px}
+html[data-studio-theme=graphite] ::-webkit-scrollbar-track{background:#242428}
+/* Keep instructional light/sky colours, scene colours and character markers. */
+html[data-studio-theme=graphite] :is(.rig-pad53){background-color:#2b2b30!important;border-color:#575760!important}
+html[data-studio-theme=graphite] .stage-wrap{border-radius:8px!important}
+/* Override older per-panel active styles without changing button metrics. */
+html[data-studio-theme=graphite] body.edition58 .controls .tabs button.active,
+html[data-studio-theme=graphite] body.edition58 #copyText.primary,
+html[data-studio-theme=graphite] body.edition58 #proPrompt.primary,
+html[data-studio-theme=graphite] body.edition58 #lighting :is(.lighting-modes,.inside-modes) button.active{background:#e63946!important;border-color:#e63946!important;color:#fff!important}
+html[data-studio-theme=graphite] body.edition58 #lighting :is(.weather-grid,#shadowOptions,.light-sources-grid) button.active,
+html[data-studio-theme=graphite] body.edition58 #themeMenu60 button.active{background:#e6394624!important;border-color:#e63946!important;color:#fff!important}
+html[data-studio-theme=graphite] body.edition58 #utilityMenu44{background:#242428!important;border-color:#33333a!important}
+html[data-studio-theme=graphite] body.edition58 #promptResize44{border-color:#33333a!important}
+html[data-studio-theme=graphite] body.edition58 input[type=range]::-webkit-slider-runnable-track{background:#44444d;border-color:#44444d}

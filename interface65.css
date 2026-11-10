@@ -1,0 +1,41 @@
+/* Final unified, readable controls. */
+html[data-studio-theme=pearl]{--ui-accent:#db5865;--select62:#db5865;--ui-text:#20252b;--ui-muted:#3d454e}
+html[data-studio-theme=dusk]{--ui-accent:#f16a74;--select62:#f16a74}
+html[data-studio-theme] body #cameraStrip61 :is(select,select option){color:#23282e!important;background:#d9dde1!important;color-scheme:light!important}
+html[data-studio-theme] body #cameraStrip61 #cameraSpeed61{color:#23282e!important;background:#d9dde1!important}
+html[data-studio-theme] body #utilityMenuButton44{border:0!important;background:transparent!important;box-shadow:none!important;border-radius:0!important}
+html[data-studio-theme] body #utilityMenuButton44::after{display:none!important}
+html[data-studio-theme=classic] body .controls{border-radius:5px!important;overflow:hidden!important}
+html[data-studio-theme=classic] body .inspector-top44{border-radius:5px 5px 0 0!important;overflow:visible!important}
+html[data-studio-theme] body #promptResize44{height:8px!important;min-height:8px!important;flex:none!important;background:transparent!important;border:0!important;margin:0!important;cursor:ns-resize}
+html[data-studio-theme] body #promptResize44::after{height:2px!important;background:var(--ui-muted,#81909f)!important;width:44px!important}
+html[data-studio-theme] body #cameraStrip61{border:0!important;padding:8px 12px!important;margin:0!important}
+html[data-studio-theme] body #promptSection{margin-top:0!important;padding-top:8px!important}
+html[data-studio-theme] body.edition58 :is(#people,#characterPopup) :is(.profile-grid52,.appearance-grid54)>button.active{color:var(--select62)!important;border-color:transparent!important;box-shadow:none!important;background:transparent!important}
+html[data-studio-theme] body.edition58 :is(#people,#characterPopup) .profile-grid52>button.active .state-svg61{color:var(--select62)!important;fill:currentColor!important;filter:none!important;opacity:1!important}
+html[data-studio-theme] body.edition58 :is(#people,#characterPopup) .profile-grid52>button.active .state-svg61 [fill=currentColor]{fill:currentColor!important}
+html[data-studio-theme] body #lighting :is([data-weather],[data-inside],[data-light-mode],#indoorFog54).active svg{color:var(--select62)!important}
+html[data-studio-theme] body #viewportTools61 button.active{color:var(--select62)!important}
+html[data-studio-theme] body #rigPad53 b{background:var(--select62)!important;border-color:var(--select62)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--select62) 20%,transparent)!important}
+html[data-studio-theme=pearl] body :is(.revision-range>span,.source-toggle,.source-toggle span,.inside-all52,.rig-wrap53>label,.rig-height-title57,.rig-rotation57>span,.weather-levels,.field>span,.profile-group52 summary,.tab-panel label,.quick-popover label){color:#242b32!important}
+html[data-studio-theme=pearl] body :is(input[type=number],input[type=text],input[type=time],select,textarea,output){color:#252b32!important}
+/* Filled segment and knob share one theme color. The track stays thin. */
+html[data-studio-theme] body input[type=range]:not(#rigHeight54){appearance:none!important;background:transparent!important;height:16px!important;padding:0!important;border:0!important;accent-color:var(--select62)!important}
+html[data-studio-theme] body input[type=range]::-webkit-slider-runnable-track{height:2px!important;background:linear-gradient(to right,var(--select62) 0 var(--range-fill65,0%),var(--ui-line,#65717b) var(--range-fill65,0%) 100%)!important;border:0!important;box-shadow:none!important;border-radius:1px!important}
+html[data-studio-theme] body input[type=range]::-webkit-slider-thumb{appearance:none!important;width:11px!important;height:11px!important;margin-top:-4.5px!important;background:var(--select62)!important;border:0!important;border-radius:50%!important}
+html[data-studio-theme] body input[type=range]::-moz-range-track{height:2px!important;background:var(--ui-line)!important;border:0!important}
+html[data-studio-theme] body input[type=range]::-moz-range-progress{height:2px!important;background:var(--select62)!important}
+html[data-studio-theme] body input[type=range]::-moz-range-thumb{width:11px!important;height:11px!important;background:var(--select62)!important;border:0!important;border-radius:50%!important}
+html[data-studio-theme] body #rigHeight54{appearance:none!important;background:transparent!important;border:0!important;width:16px!important;writing-mode:vertical-lr!important;direction:rtl!important;justify-self:center!important}
+html[data-studio-theme] body #rigHeight54::-webkit-slider-runnable-track{width:2px!important;height:100%!important;background:linear-gradient(to top,var(--select62) 0 var(--range-fill65,0%),var(--ui-line) var(--range-fill65,0%) 100%)!important}
+html[data-studio-theme] body #rigHeight54::-webkit-slider-thumb{margin:0 0 0 -4.5px!important}
+html[data-studio-theme] body svg[data-utility62=scene],html[data-studio-theme] body svg[data-utility62=scene] path{fill:currentColor!important;stroke:none!important}
+html[data-studio-theme] body.edition58 :is(#people,#characterPopup) .profile-grid52>button.active{color:var(--select62)!important}
+html[data-studio-theme] body.edition58 .controls .tabs{grid-template-columns:repeat(4,minmax(0,1fr))!important;flex-wrap:nowrap!important}
+html[data-studio-theme] body.edition58 #people .profile53 .profile-grid52>button.active,html[data-studio-theme] body.edition58 #characterPopup .profile53 .profile-grid52>button.active{color:var(--select62)!important;box-shadow:none!important;border-color:transparent!important;background:transparent!important}
+html[data-studio-theme] body .workspace{row-gap:0!important}
+html[data-studio-theme] body.edition58 #promptSection{margin-block-start:8px!important}
+html[data-studio-theme] body.edition58 main{row-gap:0!important}
+html[data-studio-theme=pearl] body #rigPad53{background:#999fa6!important;border-color:#68737d!important}
+
+html[data-studio-theme] body .inspector-top44{overflow:visible!important}

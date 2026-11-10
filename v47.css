@@ -1,0 +1,13 @@
+
+/* v47 visual refinements */
+.history44{display:flex!important;justify-content:center!important;align-items:center!important;gap:7px!important;margin-inline:auto!important}
+.history44 button{display:grid!important;place-items:center!important;line-height:1!important;padding:0!important}
+.actor-toolbar button{aspect-ratio:1/1;flex-shrink:0}
+.lighting-save-dialog47{border:1px solid #556579;border-radius:12px;background:#18222e;color:#f5f7fa;padding:20px;min-width:min(340px,90vw);box-shadow:0 20px 80px #0009}
+.lighting-save-dialog47::backdrop{background:#0009}
+.lighting-save-dialog47 form{display:grid;gap:12px}
+.lighting-save-dialog47 input{padding:10px;border-radius:6px;background:#101924;color:white;border:1px solid #627184}
+.lighting-save-dialog47 form>div{display:flex;gap:8px;justify-content:flex-end}
+.road-buildings47{display:flex;align-items:center;gap:10px;padding:8px}
+.controls .tab-panel{row-gap:6px}
+.quick-light44 .light-preset-row44>button:first-child{width:100%;text-align:center}

@@ -1,0 +1,41 @@
+/* Remove decorative header bands while retaining the window surfaces themselves. */
+html[data-studio-theme] body .viewport-toolbar{background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-studio-theme] body .viewport-toolbar::before,html[data-studio-theme] body .viewport-toolbar::after{display:none!important}
+html[data-studio-theme] body :is(.quick-head,.tool-popup-head,.pro-head,.character-popup-title,.model-popup-head,.popup-head){background:transparent!important;background-image:none!important;border:0!important;box-shadow:none!important}
+html[data-studio-theme] body :is(.quick-head,.tool-popup-head,.pro-head,.character-popup-title,.model-popup-head,.popup-head)::before,html[data-studio-theme] body :is(.quick-head,.tool-popup-head,.pro-head,.character-popup-title,.model-popup-head,.popup-head)::after{display:none!important}
+html[data-studio-theme] body :is(.quick-head strong,.tool-popup-head strong,.character-popup-title,.pro-head strong,dialog h2,.quick-popover h3,.inspector-title){font-weight:700!important}
+/* Main navigation communicates selection through the icon, without an underline. */
+html[data-studio-theme] body.edition58 .controls .tabs button,html[data-studio-theme] body.edition58 .controls .tabs button.active,html[data-studio-theme] body.edition58 .controls .tabs button[aria-pressed=true]{border:0!important;border-bottom:0!important;box-shadow:none!important;background:transparent!important}
+html[data-studio-theme] body.edition58 .controls .tabs button.active svg,html[data-studio-theme] body.edition58 .controls .tabs button[aria-pressed=true] svg{color:var(--select62)!important}
+html[data-studio-theme] body.edition58 .controls .tabs button:not(.active) svg{color:var(--ui-muted,#a0aebc)!important}
+/* Keep only the small resize grip between scene and prompt. */
+html[data-studio-theme] body #promptResize44{border:0!important;background:transparent!important;box-shadow:none!important}
+/* Camera controls sit directly on the workspace, without a colored band or rules. */
+html[data-studio-theme] body #cameraStrip61{background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-studio-theme] body #cameraStrip61 .optic61{background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-studio-theme] body #cameraStrip61 select{background:transparent!important;border:0!important;border-bottom:0!important;box-shadow:none!important}
+/* Match the context menu and sidebar expressions on the light theme. */
+html[data-studio-theme=pearl] body.edition58 :is(#people,#characterPopup) .profile53 .profile-grid52>button,html[data-studio-theme=pearl] body.edition58 :is(#people,#characterPopup) .appearance-grid54>button{background:#26313b!important;color:#f8fafc!important;--icon-ink:#111821;border-color:#52606b!important}
+html[data-studio-theme=pearl] body.edition58 :is(#people,#characterPopup) .profile53 .profile-grid52>button.active,html[data-studio-theme=pearl] body.edition58 :is(#people,#characterPopup) .appearance-grid54>button.active{color:var(--select62)!important;border-color:var(--select62)!important;background:#26313b!important}
+html[data-studio-theme=pearl] body.edition58 :is(#people,#characterPopup) .profile-gender>button{background:#26313b!important;border-color:#52606b!important}
+html[data-studio-theme=pearl] body.edition58 :is(#people,#characterPopup) .profile-gender>button.active{border-color:var(--select62)!important}
+/* Rounded's selected Room/Studio source needs a strong red location cue. */
+html[data-studio-theme=obsidian] body #lighting #interiorSources button.active,html[data-studio-theme=obsidian] body #lighting #interiorSources button[aria-pressed=true]{border:1px solid #f16a74!important;box-shadow:inset 0 0 0 1px #f16a74!important;color:#f16a74!important;background:#f16a741a!important}
+/* Solid: neutral near-black surfaces and a lime accent inspired by Higgsfield. */
+html[data-studio-theme=carbon]{--ui-bg:#090a09;--ui-panel:#141614;--ui-raised:#1d201d;--ui-line:#343a33;--ui-text:#f2f5ed;--ui-muted:#a2ad9b;--ui-accent:#d3f85a;--select62:#d3f85a;--icon-secondary:#97a58e;--utility-ink62:#090a09}
+html[data-studio-theme=carbon] body #lighting #timeDial{background:#12170f!important;border-color:#536240!important}
+html[data-studio-theme=carbon] body #lighting #timeDial .sun-orbit44{border-color:#829c53!important}
+/* Language is a quiet text choice, with an underline only on the selected value. */
+html[data-studio-theme] body.edition58 #utilityMenu44 .interface-language{background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-studio-theme] body.edition58 #utilityMenu44 .interface-language button,html[data-studio-theme] body.edition58 #utilityMenu44 .interface-language button.active,html[data-studio-theme] body.edition58 #utilityMenu44 .interface-language button[aria-pressed=true]{position:relative;background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;color:var(--ui-text,#e3eaf1)!important}
+html[data-studio-theme] body.edition58 #utilityMenu44 .interface-language button.active::after{content:'';position:absolute;bottom:2px;left:25%;right:25%;height:2px;background:var(--select62)!important}
+html[data-studio-theme] body .controls .tabs{border-bottom:0!important;box-shadow:none!important}
+html[data-studio-theme] body :is(.camera-light-bar,.actor-toolbar){background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-studio-theme=carbon] body button.primary{background:#d3f85a!important;border-color:#d3f85a!important;color:#10150a!important}
+html[data-studio-theme=carbon] body button.primary:hover{background:#e0ff7b!important;border-color:#e0ff7b!important;color:#10150a!important}
+html[data-studio-theme] body #viewportToolbar63{background:transparent!important;background-image:none!important;border:0!important;box-shadow:none!important}
+html[data-studio-theme] body #proPromptDialog .pro-head,html[data-studio-theme] body #characterPopup .character-popup-title{background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-studio-theme] body #proPromptDialog .pro-head h2,html[data-studio-theme] body #characterPopup .character-popup-title{font-weight:700!important}
+html[data-studio-theme] body :is(.quick-head,.tool-popup-head,.pro-head){position:relative!important;top:auto!important}
+html[data-studio-theme] body.edition58 .controls .tabs button.active,html[data-studio-theme] body.edition58 .controls .tabs button[aria-pressed=true]{color:var(--ui-text,#e3eaf1)!important}
+html[data-studio-theme] body.edition58 .controls .tabs button.active svg,html[data-studio-theme] body.edition58 .controls .tabs button[aria-pressed=true] svg{color:var(--select62)!important}

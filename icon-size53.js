@@ -1,0 +1,5 @@
+const watchers=new Set();
+export function mountIconSize53(host,target,key='presets'){
+ let value=64;try{value=Number(localStorage.getItem('studio.iconSize53.'+key))||64;}catch{}const label=document.createElement('label');label.className='icon-size53';label.innerHTML='<span></span><input type="range" min="56" max="160" step="4" aria-label="Icon size"><output></output>';host.prepend(label);const input=label.querySelector('input'),out=label.querySelector('output');
+ const paint=v=>{value=Math.max(56,Math.min(160,v));input.value=value;out.textContent=value+' px';target.style.setProperty('--icon53',value+'px');};paint(value);const listener=(k,v)=>{if(k===key)paint(v);};watchers.add(listener);input.oninput=()=>{paint(input.valueAsNumber);try{localStorage.setItem('studio.iconSize53.'+key,String(value));}catch{}for(const fn of watchers)fn(key,value);};return {sync(en){label.querySelector('span').textContent=en?'Icon size':'حجم الأيقونات';input.setAttribute('aria-label',en?'Icon size':'حجم الأيقونات');if(!host.isConnected)watchers.delete(listener);},element:label};
+}

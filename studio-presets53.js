@@ -1,0 +1,14 @@
+export const studioPresets53=[
+ ['rembrandt','Rembrandt','رامبرانت',[-45,2.6,3,2.2,.35],[35,1.8,3,.13,2],[145,2.5,3,0,1]],
+ ['split','Split','نصفية',[-90,1.8,2.8,2.3,.25],[30,1.8,3,0,2],[150,2.5,3,0,1]],
+ ['split-fill','Split + Fill','نصفية مع تعبئة',[-90,1.8,2.8,2.3,.3],[25,1.8,3,.48,3],[150,2.5,3,0,1]],
+ ['loop','Loop','لوب',[-28,2.25,3,2.2,.7],[30,1.8,3,.18,3],[145,2.5,3,0,1]],
+ ['butterfly','Butterfly','فراشة',[0,2.85,2.5,2.3,.8],[0,1.3,3,.12,3],[145,2.5,3,0,1]],
+ ['clamshell','Clamshell','كلام شيل',[0,2.75,2.3,2,1.5],[0,.7,2.1,.85,1.2],[145,2.5,3,0,1]],
+ ['flat','Flat Light','إضاءة متوازنة',[0,1.8,2.8,1.8,2],[0,1.5,3,.6,2],[145,2.5,3,0,1]],
+ ['key-fill-rim','Key + Fill + Rim','رئيسي وتعبئة وحواف',[-40,2.5,3,2,.8],[35,1.7,3,.5,2],[140,2.5,2,2,.3]],
+ ['high-key','High Key','هاي كي',[-20,2.3,2.6,2,2],[25,1.9,2.5,1.5,2],[170,2.3,3,1,2]],
+ ['coloured-gels','Coloured Gels','إضاءة ملونة',[-60,2,2.8,2,.7],[60,2,2.8,2,.7],[170,2.5,2,.7,.5]]
+].map(([id,name,ar,key,fill,rim],i)=>({id,name,ar,index:i+1,file:`${String(i+1).padStart(2,'0')}-${id}.png`,sources:{key,fill,rim}}));
+export function applyStudioPreset53(api,preset){const s=api.getState(),l=s.lighting,a=s.actors.find(a=>a.id===s.selectedId)||s.actors[0];s.selectedFixture54=null;l.mode='studio';l.studioAll=true;s.environment='interior';l.external=false;l.studioPreset53=preset.id;l.interiorSelected='key';l.anchor53={x:a?.x||0,y:a?.y||0,z:a?.z||0};l.rigOffset53={x:0,z:0};const model=api.getStudio?.()?.models.get(a?.id);if(model){const head=model.userData.head,position=head.getWorldPosition(head.position.clone());l.target53={x:position.x,y:position.y+.18*(a?.scale||1),z:position.z};}else l.target53={x:a?.x||0,y:(a?.y||0)+1.65,z:a?.z||0};const base=(a?.yaw||0);for(const [k,values]of Object.entries(preset.sources)){const [rotation,height,distance,power,size]=values;Object.assign(l[k],{rigOffset53:{x:0,z:0},on:power>0,rotation:(rotation+base+360)%360,height:height+(a?.y||0),distance,power,width:size,panelHeight:size,soft:size>1?7:2,kelvin:5500,color53:preset.id==='coloured-gels'?{key:'#29c6ff',fill:'#ff365d',rim:'#7d54ff'}[k]:null});}api.clearManual();api.update();api.persistNow();}
+export function mountStudioPresets53(host,api){host.classList.add('studio-gallery53');for(const preset of studioPresets53){const b=document.createElement('button');b.type='button';b.dataset.studioPreset=preset.id;b.innerHTML=`<img src="./assets/studio-lighting53/${preset.file}" alt=""><span></span>`;b.onclick=()=>applyStudioPreset53(api,preset);host.append(b);}return {sync(){const en=api.getUILanguage()==='en';for(const p of studioPresets53){const b=host.querySelector(`[data-studio-preset="${p.id}"]`);b.querySelector('span').textContent=en?p.name:p.ar;b.setAttribute('aria-label',en?p.name:p.ar);b.classList.toggle('active',api.getState().lighting?.studioPreset53===p.id);}}};}

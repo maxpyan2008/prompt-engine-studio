@@ -1,0 +1,63 @@
+.revision39 main{display:grid;grid-template-columns:minmax(0,1fr) 360px;grid-template-rows:auto 1fr;gap:16px;height:calc(100vh - 68px);padding:18px;direction:ltr}
+.revision39 header{height:68px;display:flex;justify-content:center;position:relative}
+.revision39 header .brand{position:static;margin:0!important;display:flex;align-items:center;gap:12px}
+.revision39 .brand strong{font-size:20px;letter-spacing:.5px}
+.revision39 .brand .mark{color:var(--accent)}
+.revision39 #saveStatus{position:absolute;left:22px;font-size:11px}
+.revision39 .controls{grid-column:2;grid-row:1/3;overflow:auto;border:1px solid var(--line);border-radius:14px;padding:16px;background:#20252d;min-width:0}
+.revision39 .workspace{grid-column:1;grid-row:1;min-width:0;padding:0;background:transparent}
+.revision39 .prompt-dock{grid-column:1;grid-row:2;width:100%;max-width:none;min-width:0;border:1px solid var(--line);border-radius:14px;background:#20252d;padding:16px;align-self:start;direction:inherit}
+.revision39 .controls .tabs{position:static!important;grid-template-columns:repeat(3,minmax(0,1fr));margin:12px 0 20px;padding:0 0 14px;background:transparent;gap:7px}
+.revision39 .controls .tabs button{height:64px;font-size:11px}
+.revision39 .inspector-utility{display:flex;justify-content:space-between;gap:12px;align-items:center;direction:ltr}
+.revision39 .inspector-utility button{font-size:10px;padding:6px 8px;height:auto;min-height:28px}
+.revision39 .interface-language{display:flex;gap:3px}
+.revision39 .inspector-title{display:flex;align-items:center;justify-content:center;gap:10px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.revision39 .inspector-title svg{width:22px;height:22px;color:var(--accent)}
+.revision39 .inspector-tool{position:static;width:auto;max-height:none;border:0;box-shadow:none;padding:0;direction:inherit}
+.revision39 .lighting-modes{position:static;margin:0;padding:0;background:transparent}
+.revision39 .camera-light-bar button{width:40px;height:40px;padding:9px;justify-content:center}
+.revision39 .actor-toolbar,#actorTabs,#peopleAvatarTabs{direction:ltr!important;display:flex!important;flex-flow:row nowrap!important;gap:8px!important;align-items:center;overflow:visible}
+.revision39 .actor-toolbar{min-width:0;justify-content:flex-end!important}
+.revision39 .person-chip{margin:0!important;flex:0 0 auto;position:relative}
+.revision39 #actorTabs .person-tab,.revision39 #peopleAvatarTabs .person-tab{height:43px;width:52px;border-radius:7px!important;padding:4px;background:#161c24}
+.revision39 .actor-avatar{height:34px;width:40px;object-fit:contain;border-radius:3px}
+.revision39 .person-chip .actor-remove{width:17px;height:17px;padding:0;font-size:15px;top:-4px;right:-4px;opacity:0;pointer-events:none}
+.revision39 .person-chip:hover .actor-remove,.revision39 .person-chip:focus-within .actor-remove{opacity:1;pointer-events:auto}
+.revision39 #addPerson{width:34px;height:40px;flex:0 0 auto;padding:0;font-size:24px;margin:0;background:transparent}
+.revision39 #peopleAvatarTabs{margin:0 0 18px;padding:6px 0;flex-wrap:wrap!important}
+.revision39 #viewportReadings{position:absolute;left:16px;bottom:16px;z-index:5;font:12px monospace;letter-spacing:.5px;color:#eef1f6;background:#141920cc;border:1px solid #68727b66;border-radius:6px;padding:8px 12px;direction:ltr;pointer-events:none}
+.revision39 #stage{border-radius:12px;overflow:hidden}
+.revision39 .prompt-head{display:flex!important;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;margin-bottom:10px;direction:inherit!important}
+.revision39 .prompt-head h2{margin:0}.revision39 .prompt-head .eyebrow{display:none}
+.revision39 .prompt-actions{display:flex;flex-wrap:wrap;gap:6px;position:static;margin:0!important;padding:0!important}
+.revision39 .prompt-actions button{font-size:11px;padding:8px 10px}
+.revision39 .prompt-inclusions{padding:0;margin:6px 0 10px;border:0;display:flex;direction:inherit}
+.revision39 #prompt{height:200px;min-height:140px;resize:vertical;font-size:12px;line-height:1.7;background:#151b23;border:1px solid #39424e;border-radius:8px;padding:14px;box-sizing:border-box}
+.revision39 .sidebar-profile .character-option-row{display:block;margin-top:14px}
+.revision39 .sidebar-profile .character-option-row>b{display:block;font-size:11px;margin-bottom:8px;color:#a8b5c5}
+.revision39 .sidebar-profile .character-option-row>div{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}
+.revision39 .sidebar-profile [data-choice]{height:48px;width:100%;padding:7px;position:relative;border-radius:8px}
+.revision39 .sidebar-profile svg{width:32px;height:32px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.revision39 .sidebar-profile [data-choice=bodyState]{height:48px}
+.revision39 .sidebar-profile .character-option-row:has([data-choice=bodyState])>div{grid-template-columns:repeat(4,minmax(0,1fr))}
+.revision39 [data-human-state] svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.revision39 .model-adders{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.revision39 .model-adders button{height:52px;padding:7px;position:relative}
+.revision39 .revision-range{margin:12px 0}
+.revision39 .time-dial{width:224px;height:224px}
+.revision39 [hidden]{display:none!important}
+@media(max-width:1150px){.revision39 main{grid-template-columns:minmax(0,1fr) 330px;grid-template-rows:auto auto}.revision39 .prompt-dock{grid-column:1;grid-row:2}.revision39 .controls{grid-column:2;grid-row:1/3;height:auto;min-height:0}.revision39 .workspace{grid-column:1;grid-row:1}.revision39 .prompt-head{align-items:start}.revision39 .prompt-actions{gap:5px}}
+@media(max-width:740px){.revision39 main{display:flex;flex-direction:column;height:auto;padding:10px;gap:12px}.revision39 .workspace{order:0;width:100%}.revision39 .prompt-dock{order:1}.revision39 .controls{order:2;width:100%;box-sizing:border-box;max-height:none}.revision39 .actor-toolbar{overflow-x:auto;padding:4px}.revision39 .viewport-toolbar{gap:6px}.revision39 #actorTabs .person-tab{width:38px}.revision39 .actor-avatar{width:30px}.revision39 header .brand strong{font-size:17px}.revision39 #saveStatus{display:none}.revision39 .prompt-actions{width:100%}}
+
+.revision39 main{grid-template-areas:"viewport controls" "prompt controls";grid-template-rows:auto auto;align-content:start}.revision39 .workspace{grid-area:viewport;overflow:visible;max-height:none}.revision39 .controls{grid-area:controls;align-self:stretch;max-height:calc(100vh - 104px)}.revision39 .prompt-dock{grid-area:prompt;position:static!important;inset:auto!important;transform:none!important;max-height:none;overflow:visible}.revision39 .prompt-dock>h2{display:none}.revision39 header .mark{background:transparent!important;border:1px solid var(--accent);border-radius:9px;width:32px;height:32px;display:grid;place-items:center;font-size:22px}.revision39 .workspace .stage-wrap{margin-top:12px}
+@media(max-width:740px){.revision39 main{display:flex!important}.revision39 .controls{max-height:none}}
+.revision39 main{height:auto!important;min-height:calc(100vh - 68px);overflow:visible}.revision39 .workspace{height:auto!important;min-height:fit-content!important}.revision39 .stage-wrap{height:auto!important;flex:none}.revision39 .controls{min-height:0!important;height:calc(100vh - 104px);position:sticky;top:18px}.revision39 .prompt-head{min-height:40px}.revision39 .prompt-inclusions{flex-basis:100%;justify-content:flex-start}
+@media(max-width:740px){.revision39 .controls{height:auto;position:static}.revision39 .workspace{min-height:0!important}}
+.revision39 .prompt-actions{display:flex!important;flex-direction:row!important;align-items:center;justify-content:flex-start;grid-template-columns:none;width:auto}.revision39 #promptSection .prompt-head>div:first-child{display:block}.revision39 #promptSection .prompt-head h2{display:block;font-size:15px}.revision39 #promptSection .prompt-head{direction:inherit!important}.revision39 .prompt-inclusions{width:100%}
+
+.revision39 #promptSection .prompt-actions{width:auto!important;max-width:none!important;flex:0 1 auto!important;gap:6px!important}.revision39 #promptSection .prompt-actions button{width:auto!important;min-width:0!important;flex:0 0 auto!important}.revision39 #promptSection .prompt-head{flex-wrap:wrap;justify-content:space-between}.revision39 #promptSection .prompt-head h2{font-size:15px;margin:0}.revision39 .image-copy-group{display:flex;gap:5px}
+@media(max-width:740px){.revision39 #promptSection .prompt-actions{width:100%!important}}
+.revision39 #actorTabs .person-tab,.revision39 #peopleAvatarTabs .person-tab{gap:4px!important;justify-content:center;padding:4px!important;overflow:hidden}.revision39 #actorTabs .actor-avatar,.revision39 #peopleAvatarTabs .actor-avatar{width:32px;height:32px;flex:0 0 32px}.revision39 .person-tab .color-dot{width:6px;height:6px;flex:0 0 6px;margin:0}
+@media(max-width:740px){.revision39 #actorTabs .person-tab{gap:2px!important;padding:2px!important}.revision39 #actorTabs .actor-avatar{width:24px;height:30px;flex-basis:24px}.revision39 #actorTabs .color-dot{width:5px;height:5px;flex-basis:5px}}
+.revision39 #propTitle{display:none}.revision39 #propList button{position:relative;display:flex;align-items:center;gap:6px}.revision39 #propList svg{width:24px;height:24px}.revision39 #characterPopup{max-height:calc(100vh - 30px);overflow:auto}

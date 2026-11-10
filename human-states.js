@@ -1,0 +1,4 @@
+export const humanStates=[['standing','واقف'],['seated','جالس'],['walking','يمشي'],['running','يركض'],['phone','يتكلم بالجوال'],['point','يشير بيده']];
+export function humanStateActive(actor,key){return ['phone','point'].includes(key)?actor.gesture===key:actor.pose===key;}
+export function applyHumanState(actor,key){if(!humanStates.some(([id])=>id===key))return;if(['phone','point'].includes(key)){actor.gesture=actor.gesture===key?'none':key;return;}actor.pose=key;if(key!=='seated'){actor.parentProp=null;actor.seat='chair';actor.driving=false;} }
+export function humanPoseText(actor){return ({standing:'standing',seated:'seated',walking:'walking, captured mid-stride',running:'running, captured mid-stride'})[actor.pose]+(actor.gesture==='phone'?', talking on a mobile phone held to the right ear':actor.gesture==='point'?', pointing forward with the right hand':'');}

@@ -1,0 +1,1 @@
+export function emphasis54(text){return String(text||'').replace(/\(([^()\n]+)\)(\+{1,})/g,(_,phrase,plus)=>{const n=Math.min(4,plus.length);return ['','Emphasize: ','Give particular emphasis to: ','Strong requirement: ','Highest-priority authored requirement: '][n]+phrase+(n===4?' (must be clearly present while preserving the reference composition)':'');});}

@@ -1,0 +1,1 @@
+export const appearanceIcon67='<svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" stroke="none" d="M5 14C2 4 9 0 18 4c4 1 7 0 9-2 2 10-2 12-3 13l-2-7c-5 3-8 3-14 2l-1 5Zm3 6c3-4 6-4 8-1 2-3 5-3 8 1-1 4-6 4-8 1-2 3-7 3-8-1Zm3 6c3 2 7 2 10 0l-2 5h-6Z"/></svg>';
